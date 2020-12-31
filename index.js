@@ -307,7 +307,7 @@ async function starts() {
 				case 'gtts':
 					if (args.length < 1) return client.sendMessage(from, 'Cadê o código da linguagem?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return client.sendMessage(from, 'Onde está o texto, mano?, {quoted: mek})
+					if (args.length < 2) return client.sendMessage(from, 'Onde está o texto?',em, {quoted: mek})
 					dtt = body.slice(9)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
